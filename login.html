@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nova Topup — Login</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="auth-wrap">
+  <div class="auth-card">
+
+    <a href="home.html" class="nav-logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="lg3" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#a855f7"/>
+            <stop offset="100%" stop-color="#00f0ff"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="44" height="44" rx="12" fill="#161625" stroke="url(#lg3)" stroke-width="2"/>
+        <path d="M14 30 L14 18 L20 18 L24 24 L28 18 L34 18 L34 30 L29 30 L29 22 L24 30 L19 22 L19 30 Z" fill="url(#lg3)"/>
+      </svg>
+      NOVA<span class="grad">TOPUP</span>
+    </a>
+
+    <h1>Welcome back</h1>
+    <p class="sub">Log in to manage your orders and top-ups.</p>
+
+    <div class="form-status" id="formStatus">✅ Logged in successfully! Redirecting...</div>
+
+    <form id="loginForm" novalidate>
+
+      <div class="field" id="emailField">
+        <label for="email">Email address</label>
+        <div class="input-wrap">
+          <span class="input-ic">✉️</span>
+          <input type="email" id="email" name="email" placeholder="you@example.com" />
+        </div>
+        <div class="error-msg">Please enter a valid email address.</div>
+      </div>
+
+      <div class="field" id="passwordField">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+          <span class="input-ic">🔒</span>
+          <input type="password" id="password" name="password" placeholder="Enter your password" />
+        </div>
+        <div class="error-msg">Password must be at least 6 characters.</div>
+      </div>
+
+      <div class="form-row">
+        <label class="checkbox-wrap">
+          <input type="checkbox" id="remember" />
+          Remember me
+        </label>
+        <a href="#" class="link-muted">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Log In</button>
+    </form>
+
+    <div class="auth-divider">or</div>
+
+    <p class="auth-footer-text">
+      Don't have an account? <a href="#" class="link-muted">Sign up</a>
+    </p>
+
+    <div class="back-home-wrap">
+      <a href="home.html" class="btn btn-ghost btn-block">← Back to Home</a>
+    </div>
+
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

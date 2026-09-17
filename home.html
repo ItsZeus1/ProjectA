@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nova Topup — Browse Games</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="home.html" class="nav-logo">
+      <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#a855f7"/>
+            <stop offset="100%" stop-color="#00f0ff"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="44" height="44" rx="12" fill="#161625" stroke="url(#lg2)" stroke-width="2"/>
+        <path d="M14 30 L14 18 L20 18 L24 24 L28 18 L34 18 L34 30 L29 30 L29 22 L24 30 L19 22 L19 30 Z" fill="url(#lg2)"/>
+      </svg>
+      NOVA<span class="grad">TOPUP</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="home.html" class="active">Home</a>
+      <a href="#games">Games</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="navbar-search">
+      <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="gameSearch" placeholder="Search for a game (e.g. PUBG, Fortnite)..." autocomplete="off" />
+    </div>
+
+    <div class="navbar-actions">
+      <a href="login.html" class="btn btn-ghost btn-sm">Login</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero container">
+  <h1>Recharge your game, <span class="grad">instantly.</span></h1>
+  <p>Choose from 8+ top games below and get your currency delivered straight to your account.</p>
+</section>
+
+<!-- ============ MAIN SECTION ============ -->
+<main class="container">
+
+  <!-- quick services -->
+  <section class="section" id="services">
+    <div class="services-row">
+      <span class="service-pill"><span class="ic">💎</span> Mobile Game Diamonds</span>
+      <span class="service-pill"><span class="ic">🎟️</span> Gift Cards</span>
+      <span class="service-pill"><span class="ic">🧾</span> Game Subscriptions</span>
+      <span class="service-pill"><span class="ic">🕹️</span> Battle Pass</span>
+      <span class="service-pill"><span class="ic">⭐</span> PC / Console Credits</span>
+    </div>
+  </section>
+
+  <!-- games grid -->
+  <section class="section" id="games">
+    <div class="section-head">
+      <h2>Popular Games</h2>
+      <p id="resultCount">8 games available</p>
+    </div>
+
+    <div class="games-grid" id="gamesGrid">
+
+      <article class="game-card" data-name="pubg mobile pubg uc">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#2a2a1a,#3a3418);">
+          🪖
+          <span class="badge-hot">Popular</span>
+        </div>
+        <div class="game-body">
+          <div class="game-title">PUBG Mobile</div>
+          <div class="game-sub">UC — Unknown Cash</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="fortnite v-bucks vbucks">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#1a1a3a,#241f4d);">
+          🪂
+          <span class="badge-hot">Popular</span>
+        </div>
+        <div class="game-body">
+          <div class="game-title">Fortnite</div>
+          <div class="game-sub">V-Bucks</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="free fire diamonds garena">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#3a1a1a,#4d2020);">
+          🔥
+        </div>
+        <div class="game-body">
+          <div class="game-title">Free Fire</div>
+          <div class="game-sub">Diamonds</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="mobile legends bang bang diamonds mlbb">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#1a2a3a,#20344d);">
+          🛡️
+        </div>
+        <div class="game-body">
+          <div class="game-title">Mobile Legends</div>
+          <div class="game-sub">Diamonds</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="call of duty mobile cp codm">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#241a3a,#2d1f4d);">
+          🎯
+        </div>
+        <div class="game-body">
+          <div class="game-title">Call of Duty Mobile</div>
+          <div class="game-sub">CP — CoD Points</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="valorant vp riot points">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#3a1a2a,#4d2033);">
+          ⚔️
+          <span class="badge-hot">New</span>
+        </div>
+        <div class="game-body">
+          <div class="game-title">Valorant</div>
+          <div class="game-sub">VP — Valorant Points</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="league of legends rp riot points lol">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#1a3a2a,#1f4d34);">
+          🏆
+        </div>
+        <div class="game-body">
+          <div class="game-title">League of Legends</div>
+          <div class="game-sub">RP — Riot Points</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+      <article class="game-card" data-name="genshin impact genesis crystals">
+        <div class="game-thumb" style="background:linear-gradient(135deg,#2a1a3a,#33204d);">
+          💠
+        </div>
+        <div class="game-body">
+          <div class="game-title">Genshin Impact</div>
+          <div class="game-sub">Genesis Crystals</div>
+          <button class="btn btn-primary btn-sm topup-btn">Top Up</button>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="empty-state" id="emptyState">
+      <div class="ic">🔍</div>
+      <p>No games found. Try a different search term.</p>
+    </div>
+  </section>
+
+  <!-- why us -->
+  <section class="section">
+    <div class="section-head">
+      <h2>Why Choose NovaTopup</h2>
+    </div>
+    <div class="features-strip">
+      <div class="feature-card">
+        <div class="ic">⚡</div>
+        <h3>Instant Delivery</h3>
+        <p>Most orders are delivered to your account within minutes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🔒</div>
+        <h3>Secure Payments</h3>
+        <p>Encrypted checkout with multiple trusted payment options.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">💬</div>
+        <h3>24/7 Support</h3>
+        <p>Our team is available around the clock via WhatsApp &amp; email.</p>
+      </div>
+      <div class="feature-card">
+        <div class="ic">🏷️</div>
+        <h3>Best Prices</h3>
+        <p>Competitive rates with regular discounts and bonus offers.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="home.html" class="nav-logo">
+          <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="44" height="44" rx="12" fill="#161625" stroke="#3a3a5c" stroke-width="2"/>
+            <path d="M14 30 L14 18 L20 18 L24 24 L28 18 L34 18 L34 30 L29 30 L29 22 L24 30 L19 22 L19 30 Z" fill="#a855f7"/>
+          </svg>
+          NOVA<span class="grad">TOPUP</span>
+        </a>
+        <p>Your trusted destination for fast, secure in-game currency top-ups across all your favorite titles.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="contact-list">
+          <a href="https://wa.me/10000000000" class="contact-item" target="_blank" rel="noopener">
+            <span class="ic-badge">🟢</span> WhatsApp: +1 000 000 0000
+          </a>
+          <a href="https://instagram.com/novatopup" class="contact-item" target="_blank" rel="noopener">
+            <span class="ic-badge">📸</span> @novatopup
+          </a>
+          <a href="mailto:support@novatopup.com" class="contact-item">
+            <span class="ic-badge">✉️</span> support@novatopup.com
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> NovaTopup. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="WhatsApp">🟢</a>
+        <a href="https://instagram.com/novatopup" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+        <a href="mailto:support@novatopup.com" aria-label="Email">✉️</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
